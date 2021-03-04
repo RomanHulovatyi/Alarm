@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAlarm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Alarm>
+    <DateAndTime>2021-03-03T11:48:48</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+  <Alarm>
+    <DateAndTime>2021-03-03T13:37:30</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+  <Alarm>
+    <DateAndTime>2021-03-03T19:59:43</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+  <Alarm>
+    <DateAndTime>2021-03-03T20:00:46.490083+02:00</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+  <Alarm>
+    <DateAndTime>2021-03-03T20:03:38</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+  <Alarm>
+    <DateAndTime>2021-03-03T20:54:16</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+  <Alarm>
+    <DateAndTime>2021-03-03T21:04:51</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+  <Alarm>
+    <DateAndTime>2021-03-03T21:06:11</DateAndTime>
+    <Status>Completed</Status>
+  </Alarm>
+</ArrayOfAlarm>

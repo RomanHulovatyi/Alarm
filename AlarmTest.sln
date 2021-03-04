@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlarmTest", "AlarmTest\AlarmTest.csproj", "{B2296A3E-D9CD-4481-A0B6-5B3D52B190FC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{1F75CD93-6602-4BD8-B1B5-B2218876EC6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2296A3E-D9CD-4481-A0B6-5B3D52B190FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2296A3E-D9CD-4481-A0B6-5B3D52B190FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2296A3E-D9CD-4481-A0B6-5B3D52B190FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2296A3E-D9CD-4481-A0B6-5B3D52B190FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F75CD93-6602-4BD8-B1B5-B2218876EC6C}.Debug|Any CPU.ActiveCfg = Debug
+		{1F75CD93-6602-4BD8-B1B5-B2218876EC6C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4280A88-C7B2-4199-9D8D-D52CCF0B18BB}
+	EndGlobalSection
+EndGlobal
