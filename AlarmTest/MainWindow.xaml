@@ -7,16 +7,18 @@
         xmlns:local="clr-namespace:AlarmTest"
         mc:Ignorable="d"
         Title="Alarm Clock" Height="454" Width="382" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="AlarmClock_Loaded">
-    
+
     <Grid Margin="0,0,10,7">
-        
-        <xctk:DateTimePicker x:Name="dateTimePicker" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,0.528"/>
-        <Button x:Name="btnStart" Content="Start" Margin="60,116,258,0" VerticalAlignment="Top" Height="34" Click="btnStart_Click"/>
-        <Button x:Name="btnStop" Content="Stop" Margin="258,116,60,0" VerticalAlignment="Top" RenderTransformOrigin="0.568,0.658" Height="34" Click="btnStop_Click"/>
-        <Label x:Name="lblStatus" Content="Status" HorizontalAlignment="Center" Margin="0,76,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnPostponed" Content="Postponed" Margin="143,116,143,0" VerticalAlignment="Top" Height="34" Click="btnPostponed_Click"/>
+
+        <xctk:DateTimePicker x:Name="dateTimePicker" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,0.528" DisplayDefaultValueOnEmptyText="True"/>
+        <Button x:Name="btnStart" Content="Start" Margin="60,131,258,0" VerticalAlignment="Top" Height="34" Click="btnStart_Click"/>
+        <Button x:Name="btnStop" Content="Stop" Margin="258,131,60,0" VerticalAlignment="Top" RenderTransformOrigin="0.568,0.658" Height="34" Click="btnStop_Click"/>
+        <Label x:Name="lblStatus" Content="Status" HorizontalAlignment="Center" Margin="162,96,143,0" VerticalAlignment="Top" Width="61"/>
+        <Button x:Name="btnPostponed" Content="Postponed" Margin="143,131,143,0" VerticalAlignment="Top" Height="34" Click="btnPostponed_Click"/>
         <DataGrid x:Name="List" Margin="10,180,0,77" ></DataGrid>
         <Button x:Name="btnDelete" Content="Delete" Margin="143,359,143,0" VerticalAlignment="Top" Height="34" Click="btnDelete_Click"/>
+        <TextBox x:Name="Notification" HorizontalAlignment="Left" Height="23" Margin="130,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,71,0,0" TextWrapping="Wrap" Text="Notification:" VerticalAlignment="Top" Height="20"/>
 
     </Grid>
 </Window>

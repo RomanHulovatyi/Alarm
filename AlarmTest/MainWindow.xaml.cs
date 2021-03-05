@@ -79,7 +79,8 @@ namespace AlarmTest
         {
             Alarm userAlarm = new Alarm
             {
-                DateAndTime = (DateTime)dateTimePicker.Value
+                DateAndTime = (DateTime)dateTimePicker.Value,
+                Notification = Notification.Text
             };
             if (userAlarm.DateAndTime > DateTime.Now)
             {
@@ -88,6 +89,7 @@ namespace AlarmTest
                 alarmClock.Add(userAlarm);
 
                 Serialization.Serialize(alarmClock);
+                Notification.Text = "";
             }
             else
             {
@@ -116,7 +118,12 @@ namespace AlarmTest
 
         private void AlarmClock_Loaded(object sender, RoutedEventArgs e)
         {
-            string xmlString = ConfigurationManager.AppSettings["XmlPath"];
+            string xmlString = $"{Environment.CurrentDirectory}\\AlarmList.xml";
+            bool fileExist = File.Exists(xmlString);
+            if (!fileExist)
+            {
+                File.CreateText(xmlString).Dispose();
+            }
             if (!String.IsNullOrEmpty(xmlString))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(ObservableCollection<Alarm>));

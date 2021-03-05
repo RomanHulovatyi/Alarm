@@ -16,5 +16,6 @@ namespace AlarmTest
     {
         public DateTime DateAndTime { get; set; }
         public AlarmStatus Status { get; set; } = 0;
+        public string Notification { get; set; }
     }
 }

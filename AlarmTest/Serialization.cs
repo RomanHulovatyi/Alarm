@@ -16,7 +16,7 @@ namespace AlarmTest
         {
             XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Alarm>));
 
-            TextWriter txtWriter = new StreamWriter(ConfigurationManager.AppSettings["XmlPath"]);
+            TextWriter txtWriter = new StreamWriter($"{Environment.CurrentDirectory}\\AlarmList.xml");
 
             xs.Serialize(txtWriter, alarms);
 
